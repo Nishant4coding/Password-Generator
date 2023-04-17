@@ -158,5 +158,7 @@ h3 {
   }
   .copy{
     margin-left: 50px;
+    top: 27%;
+    bottom: 70%;
   }
 }
