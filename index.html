@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Your Privacy</h1>
+        <div class="password">
+        <h3 type="text" class="passwordDisplay" id="passwordDisplay">Password
+            
+        </h3>
+        <button class="copy"><img src="./clipboard-copy.png" class="image" alt=""></div></button>
+        
+        <form id="PasswordGeneraterForm">
+            <div class="forms">
+            <label for="NumberOfCharacter">Number of Characters</label>
+            <input type="range" min="0" max="50" value="10"  id="CharacterRange" class="range">
+            <input type="number" min="1" max="50" value="10" id="NumberOfCharacter" class="amount">
+            <!-- <span id="NumberOfCharacter"></span> -->
+            <br>
+            
+            <input type="checkbox" id="IncludeLetter">
+            <label for="IncludeLetter">Include Letters</label>
+            <br>
+            <input type="checkbox" id="IncludeNumber">
+            <label for="IncludeNumber">Include Numbers</label>
+            <br>
+            <input type="checkbox" id="IncludeSymbol">
+            <label for="IncludeSymbol">Include Symbols</label>
+            <br><br>
+            <button type="submit" id="generate" class="button"> <b> Generate Password</b></button>
+            <!-- <button id="clipboard"class="button"> <b>Send to Whatsapp</b></button> -->
+
+        </div>
+        </form>
+    </div>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,162 @@
+body {
+  background: url(./password.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1 {
+  color: crimson;
+  font-size: 40px;
+  text-align: center;
+  font-style: oblique;
+  font-weight: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 30%;
+  width: auto;
+  height: auto;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+form {
+  font-size: 20px;
+  color: aqua;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.password {
+  background: transparent;
+  color: white;
+  padding: 1rem;
+  border: 1px solid red;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  font-family: serif;
+  }
+.amount {
+  font-size: 20px;
+  background-color: transparent;
+  color: aqua;
+  block-size: 20px;
+  margin-bottom: 20px;
+}
+label,
+input {
+  margin-top: 20px;
+  width: auto;
+  /* border: 2px solid blue;   */
+}
+
+.button {
+  --color: #0077ff;
+  font-family: inherit;
+  display: inline-block;
+  width: auto;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+  top: 50%;
+  left: 25%;
+  font-weight: 20px;
+}
+.copy {
+  background: transparent;
+  float: right;
+  right: 50px;
+  position: fixed;
+  margin-left: 20px;
+}
+button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 1500px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 500px;
+}
+
+button:hover {
+  color: rgb(255, 255, 255);
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+button:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+h3 {
+  /* max-width: 100px;
+    word-wrap: break-word;
+    text-align: center; */
+  word-wrap: break-word;
+  max-width: calc(90% - 40px);
+}
+.image {
+  /* text-align:initial; */
+  width: 40px;
+  height: 50px;
+  object-position: right;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    position: fixed;
+    left: 50%;
+    width: 300px;
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  form {
+    font-size: 20px;
+    color: aqua;
+  }
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .button {
+    align-self: center;
+    width: auto;
+    left: 5%;
+  }
+  h3 {
+    /* max-width: 100px;
+    word-wrap: break-word;
+    text-align: center; */
+    word-wrap: break-word;
+    max-width: calc(85% - 40px);
+  }
+  .copy{
+    margin-left: 50px;
+  }
+}
